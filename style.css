@@ -1,0 +1,112 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Karla", sans-serif;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #e6eff5;
+    padding:32px ;
+}
+.container{
+    box-shadow: 0px 15px 30px 0px #0051AB26;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 635px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    padding: 40px;
+    
+     h1{
+        font-size: 24px;
+        font-weight: 700;
+        color: #2ab3b1;
+        margin-bottom: 13px;
+     }
+     h2{
+        color: #c0df33;
+        font-weight: 700;
+        font-size: 18px;
+     }
+     p{
+        color: #9aa7be;
+     }
+}
+
+.content-grid{
+    display: flex;
+    color: #fff;
+    border-radius: 0px 0px 10px 10px;
+    .content{
+        width: 50%;
+
+        h2{
+            color: #fff;
+        }
+        p{
+            color: #fff;
+         }
+    }
+}
+
+button{
+    padding: 1rem;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 0.4rem;
+    border: none;
+    background-color: #c0df33;
+    box-shadow: 0px 10px 10px 0px #00000019;
+    cursor: pointer;
+}
+.c1{
+    p{  
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        font-weight: 400;
+    }
+    strong{
+        font-size: 32px;
+        font-weight: 700;
+    }
+    background-color: #2ab3b1;
+}
+.c2{
+    background-color:#4bbfbd ;
+}
+
+@media screen and (max-width:430px) {
+    .content{
+        padding: 24px;
+    }    
+    .content-grid{
+        display: flex;
+        color: #fff;
+        flex-direction: column;
+        .content{
+            width: 100%;
+            min-height: 227px;
+    
+            h2{
+                color: #fff;
+            }
+            p{
+                color: #fff;
+             }
+        }
+    }
+}
